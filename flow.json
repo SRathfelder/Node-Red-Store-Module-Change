@@ -1,1 +1,92 @@
-[]
+[
+    {
+        "id": "82f27866a892f94f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0cf132fc43e03f11",
+        "type": "azureiothub",
+        "z": "82f27866a892f94f",
+        "name": "Azure IoT Hub",
+        "protocol": "amqp",
+        "x": 670,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04d6dbcea64e453d",
+        "type": "csv",
+        "z": "82f27866a892f94f",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 680,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5175e10a7ba5264a",
+        "type": "json",
+        "z": "82f27866a892f94f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 420,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48b16d5a8e15270a",
+        "type": "xml",
+        "z": "82f27866a892f94f",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 560,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9835b6265c477947",
+        "type": "batch",
+        "z": "82f27866a892f94f",
+        "name": "",
+        "mode": "count",
+        "count": 10,
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [
+            {
+                "topic": ""
+            }
+        ],
+        "x": 1020,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    }
+]
